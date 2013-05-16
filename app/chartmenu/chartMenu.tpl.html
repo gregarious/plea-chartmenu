@@ -1,0 +1,24 @@
+<div class="student-list-panel">
+	<h3>Students</h3>
+	<ul>
+		<li ng-repeat="student in students" ng-click="selectStudent(student)">
+			<p>{{student.name}}</p>
+		</li>
+	</ul>
+</div>
+<div class="chart-list-panel" ng-show="selectedStudent">
+	<h3>Charts for {{selectedStudent.name}}:</h3>
+	<button class="btn btn-primary" ng-click="newChart(selectedStudent)">New Chart</button>
+	<ul>
+		<li ng-repeat="chart in selectedStudent.charts" ng-click="selectChart(chart)">
+			<p>Chart #{{chart.id}}</p>
+			<p>Last opened at: {{chart.lastOpenedAt}}</p>
+		</li>
+	</ul>
+</div>
+
+<div ng-show="showDialog">
+<div ng-include src="app/chartmenu/newChartDialog.tpl.html">
+	
+</div>
+</div>

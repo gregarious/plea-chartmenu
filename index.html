@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="1024">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css?v=1">
+<!--         <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css">
+ -->
+        <!--<script src="vendor/modernizr-2.6.2.min.js"></script>-->
+    </head>
+    <body>
+        <header>
+            <div>Teacher Name</div>
+            <div>Current Date: May 16, 2013</div>
+        </header>
+
+        <div data-ng-view class="app-container">
+
+        <!-- Add your site or application content here -->
+        <script src="vendor/jquery-2.0.0.min.js"></script>
+
+        <script src="vendor/underscore-min.js"></script>
+        <script src="vendor/backbone-min.js"></script>
+        <script src="vendor/backbone.localStorage.js"></script>
+        <script src="vendor/backbone-relational.js"></script>
+
+        <script src="vendor/moment.min.js"></script>
+
+        <script src="vendor/angular.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/angular-strap.js"></script>
+
+
+        <script src="app/app.js"></script>
+        <script src="app/services.js"></script>
+        <script src="app/chartMenu/chartMenuController.js"></script>
+    </body>
+</html>

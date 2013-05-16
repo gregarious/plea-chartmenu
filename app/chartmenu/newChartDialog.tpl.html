@@ -1,0 +1,10 @@
+<div class="new-chart-dialog-container" ng-controller="newChartDialogController">
+	<button ng-click="back()">Back</button>
+	<div ng-switch on="state">
+		
+		<div ng-switch-when="0" ng-click="forward()">Page 1</div>
+		<div ng-switch-when="1" ng-click="forward()">Page 2</div>
+		<div ng-switch-when="2" ng-click="forward()">Page 3</div>
+		<div ng-switch-when="3" ng-click="forward()">Page 4</div>
+	</div>
+</div>
